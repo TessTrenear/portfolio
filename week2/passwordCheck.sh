@@ -3,7 +3,9 @@
 # Week 2 script "passwordCheck.sh"
 
 # Type a secret password (hide password input)
-read -sp 'Enter Password: ' pass_var
+
+echo -e "\e[1;31m "Enter Password:" \e[0m"
+read -sp pass_var
 
 # Check the user’s password against the hash stored in 'secret.txt'
 var_hash=$( echo $pass_var | sha256sum )
