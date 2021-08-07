@@ -1,0 +1,3 @@
+megafoldermaker.sh
+doginasuit.jpg
+test
