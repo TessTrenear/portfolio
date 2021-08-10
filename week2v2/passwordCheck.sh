@@ -1,11 +1,15 @@
-#!/bin/bash 
-
 # Week 2 script "passwordCheck.sh"
 
 # Type a secret password (hide password input)
+# "Enter Password:" will print in the colour red
 
-echo -e "\e[1;31m "Enter Password:" \e[0m"
-read -sp pass_var
+#!/bin/bash 
+
+RED='\e[1;31m'
+
+NC1='\e[0m'
+
+printf "${RED}Enter Password:${NC1}";read -s pass_var
 
 # Check the user’s password against the hash stored in 'secret.txt'
 var_hash=$( echo $pass_var | sha256sum )
