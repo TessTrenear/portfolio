@@ -20,6 +20,9 @@ echo -e "\e[1;34m "6. check file names" \e[0m"
 echo -e "\e[1;34m "7. download a file" \e[0m"
 echo -e "\e[1;37m "8. exit" \e[0m"
 
+#The user options listed below link to each of the menu option listed above. For example, menu 1 option links to user option 1. 
+# Each time a menu option is executed it executes a script linked to the "megamenu.sh" script
+
 read useroption
 
 case $useroption in
